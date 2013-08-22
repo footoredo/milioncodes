@@ -1,0 +1,75 @@
+
+
+<meta http-equiv='refresh' content='60'>
+<title>Submission Status</title>
+<center>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel=stylesheet href='include/hoj.css' type='text/css'>
+</head>
+<body>
+<center>
+<div style="width:90%; text-align:left">
+<img src="image/logo.png"/>
+</div>
+<table width=96%> 
+	<tr align="center" class='hd' valign="top">
+				<th><a href="faqs.php">F.A.Qs</a></th>
+		<th><a href="./">Home</a></th>
+		<th><a href="./problemset.php">ProblemSet</a></th>
+		<th><a href="./status.php">Status</a></th>
+		<th><a href="./ranklist.php">Ranklist</a></th>
+		<th><a href="./contest.php">Contest</a></th>
+		<th><a href=loginpage.php>Login</a></th><th><a href=registerpage.php>Register</a></th>		<th><a href="./donation.php" class="highlight">捐赠本站</a></th>
+	</tr>
+</table>
+</center>
+<center>
+<div class="notice">
+	<div>
+		<B>Notice:</B>1：欢迎添加试题到OJ上，要求难度在省选之上，相关资料请发到lydsy2012@163.com。
+2:http://www.lydsy.com/JudgeOnline/wttl/wttl.php 	</div>
+</div>
+</center>
+</div>
+<table width=90%>
+<tr><td>
+<form id=simform action="status.php" method="get">
+Problem ID:<input type=text size=4 name=problem_id value='1000'>
+User:<input type=text size=6 name=user_id value='submittersubmitter'>
+Language:<select size="1" name="language">
+<option value='-1'>All</option><option value=0>C</option><option value=1 selected>C++</option><option value=2>Pascal</option><option value=3>Java</option><option value=4>Ruby</option><option value=5>Bash</option><option value=6>Python</option></select>
+Result:<select size="1" name="jresult">
+<option value='-1' selected>All</option><option value='4'>Accepted</option><option value='5'>Presentation_Error</option><option value='6'>Wrong_Answer</option><option value='7'>Time_Limit_Exceed</option><option value='8'>Memory_Limit_Exceed</option><option value='9'>Output_Limit_Exceed</option><option value='10'>Runtime_Error</option><option value='11'>Compile_Error</option><option value='0'>Pending</option><option value='1'>Pending_Rejudging</option><option value='2'>Compiling</option><option value='3'>Running_&_Judging</option></select></select>
+
+<input type=submit value='Search'></form></td></tr>
+</table>
+<table align=center>
+<tr  class='toprow'>
+<td width="8%">RunID<td width="10%">User<td width="6%">Problem<td width="17%">Result<td width="10%">Memory<td width="8%">Time<td width="6%">Language<td width="10%">Code_Length<td width="17%">Submit_Time</tr>
+<tr align=center class='evenrow'><td>470092<td><a href='userinfo.php?user=submittersubmitter'>submittersubmitter</a><td><a href='problem.php?id=1000'>1000</a><td><font color=green>Accepted</font><td>1272 <font color=red>kb</font><td>0 <font color=red>ms</font><td>C++<td>138 B<td>2013-08-22 19:32:35</tr><tr align=center class='oddrow'><td>470091<td><a href='userinfo.php?user=submittersubmitter'>submittersubmitter</a><td><a href='problem.php?id=1000'>1000</a><td><font color=green>Accepted</font><td>1272 <font color=red>kb</font><td>0 <font color=red>ms</font><td>C++<td>155 B<td>2013-08-22 19:30:56</tr></table>
+[<a href=status.php?&problem_id=1000&user_id=submittersubmitter&language=1>Top</a>]&nbsp;&nbsp;[<a href=status.php?&problem_id=1000&user_id=submittersubmitter&language=1&top=470112>Previous Page</a>]&nbsp;&nbsp;[<a href=status.php?&problem_id=1000&user_id=submittersubmitter&language=1&top=470091&prevtop=470092>Next Page</a>]</center>
+﻿<br>
+
+<a href="./"><span class=red>HOME</span></a>
+<a href="javascript:history.go(-1)"><span class=red>Back</span></a>
+
+<hr>
+<center>
+	<div class="footer">
+			<a href=setlang.php?lang=ko>한국어</a>&nbsp;
+		<a href=setlang.php?lang=cn>中文</a>&nbsp;
+		<a href=setlang.php?lang=fa>فارسی</a>&nbsp;
+		<a href=setlang.php?lang=en>English</a>&nbsp;
+		<a href=setlang.php?lang=th>ไทย</a>
+	<br>		<div>版权所有 &copy;2008-2012 大视野在线测评 | <script src="http://s21.cnzz.com/stat.php?id=2982771&web_id=2982771" language="JavaScript"></script>
+</div>
+		<div>Based on opensource project <a href="http://hustoj.googlecode.com">hustoj</a>.</div>
+	</div>
+</center>
+</body>
+</html>
+<!--not cached-->
+0
