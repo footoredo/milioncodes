@@ -48,7 +48,8 @@ char str[N];
 
 int main() {
 	scanf("%s%d", str, &n);
-	REP(i,strlen(str)) {
+	int l=strlen(str);
+	REP(i,l) {
 		if (i) REP(k,3) cnt[i][k]=cnt[i-1][k];
 		cnt[i][str[i]-'x']++;
 	}
@@ -56,7 +57,16 @@ int main() {
 		int l, r;
 		scanf("%d%d", &l, &r);
 		--l; --r;
-		if (!l) printf("")
+		int x=cnt[r][0], y=cnt[r][1], z=cnt[r][2];
+		if (l) {
+			x-=cnt[l-1][0];
+			y-=cnt[l-1][1];
+			z-=cnt[l-1][2];
+		}
+		int t=min(min(x,y),z);
+		x-=t; y-=t; z-=t;
+		if ((x+y+z+t*3<3)||(x<2&&y<2&&z<2)) printf("YES\n");
+		else printf("NO\n");
 	}
 	return 0;
 }
